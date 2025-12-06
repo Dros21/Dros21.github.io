@@ -1,0 +1,208 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container {
+    background: url(Bakery\ Background\ Image.jpeg);
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    max-width: 82em;
+}
+
+div.container {
+    position: relative;
+    min-height: 100vh;
+    max-width: 82em;
+}
+
+div {
+    background-color: rgb(108, 85, 69);
+    max-width: 60em;
+    margin: auto;
+}
+
+/* >>> IMPORTANT: you have to change the wrap of the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class. And you need a div with the class container and all the other pages.  */
+
+main {
+    padding: 0 1.5em 3em;
+}
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(100, 71, 52);
+    padding: 1.5em 1.5em 1.5em;
+}
+
+h1 {
+    max-width: 12em;
+    font-family: "aquavit", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    font-family: "aquavit", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 2em;
+    margin: 1em 0em 0.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin: 0.5em 0em 0em;
+    color: rgb(232, 164, 188);
+}
+
+h4 {
+    margin: 0.25em 0em 0em 0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: right;
+    font-family: sans-serif;
+    font-family: "barricada-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+ul li {
+    list-style-type: none;
+    text-transform: none;
+    font-weight: none;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+}
+
+figure {
+    margin-bottom: 1.5em;
+}
+
+main.menu ul {
+    margin: 0.25em 0em 2em;
+    padding-bottom: 1.25em 0em 1em 0em;
+    border-bottom: solid rgb(232, 164, 188);
+}
+
+main.menu ul li {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin-top: 0.25em;
+}
+
+p {
+    margin: 1em 0em 1em;
+    font-family: "aquavit", sans-serif;
+}
+
+p.description {
+    grid-column: 1/2;
+    grid-row: 2;
+    margin: 0.25em 0em 0em;
+    font-family: "aquavit", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+p.price {
+    grid-row: 1;
+    grid-column: 2;
+    color: rgb(232, 164, 188);
+    text-align: right;
+    margin: 0.25em 0em 0em;
+    font-family: "aquavit", sans-serif;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: rgb(232, 164, 188);
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 2em;
+}
+
+p.slogan {
+    font-family: "barricada-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    max-width: 82em;
+    height: 5em;
+    padding: 0.5em 0em 0em 1.25em;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background: rgb(232, 164, 188);
+}
+
+address {
+    color: rgb(255, 255, 255);
+    font-family: "aquavit", sans-serif;
+}
+
+article {
+    max-width: 60em;
+    margin: auto;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(65, 45, 32);
+}
+
+nav ul li.selected a {
+    color: white;
+}
+
+@media screen and (min-width: 60em) {
+    main.menu ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0em 5.5em;
+    }
+
+    nav ul {
+        margin: 0em 0.25em 0em 0.25em;
+        display: grid;
+        grid-template-columns: 8em 10em 11.5em;
+        justify-content: right;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3em;
+    }
+
+    .contact ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0em 2em;
+    }
+}
