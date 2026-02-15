@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="letter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209.52 90.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f15a29;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #00aeef;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="M126.5,55.04V7.2h-8.98v74.87h8.98v-18.36l.64-.61v-8.8c-.22.26-.44.52-.64.75Z"/>
+    <path class="cls-1" d="M140.37,50.45l19.48-20.09h-10.71c-6.62,7.31-17.32,18.5-22.01,23.94v8.8l7.11-6.83,17.34,25.81h10.51l-21.73-31.62Z"/>
+  </g>
+  <g>
+    <path class="cls-2" d="M71.11,51.87l.02.03v-.05l-.02.02Z"/>
+    <rect class="cls-2" x="61.83" y="7.2" width="8.98" height="73.75"/>
+    <path class="cls-3" d="M107.73,80.95l-26.01-29.38,23.97-22.24h-11.42l-23.13,22.52v.05l25.07,29.04h11.53Z"/>
+  </g>
+</svg>
