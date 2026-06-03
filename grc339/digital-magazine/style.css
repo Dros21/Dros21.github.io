@@ -326,13 +326,26 @@ div.newsletter-container{
 
 @media only screen and (min-width: 60em) {
 
-       div.container {
+    div.home-container {
         max-width: 80em;
         padding: 0 1em;
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 1em;
+        grid-template-columns: 3fr 1fr;
+        gap: 1em;
     }
+
+   div.container {
+    max-width: 60em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+}
+
+div.stories-container {
+    max-width: 80em;
+    grid-template-columns: 2fr 1fr;
+}
 
     header, footer{
         grid-column: 1/3;
