@@ -289,6 +289,11 @@ main.newsletter h3{
     font-size: 1.25em;
 }
 
+main.stories h2{
+    border-style: solid;
+    border-top: 4px solid rgb(32, 82, 112);
+}
+
 @media screen and (min-width: 40em) {
    header, h2, h3, p, h4{
     margin: .2rem 0 0;
@@ -321,24 +326,27 @@ div.newsletter-container{
 
 @media only screen and (min-width: 60em) {
 
-    div.home-container {
+       div.container {
         max-width: 80em;
         padding: 0 1em;
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
-
-    div.container {
-        max-width: 60em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-gap: 1em;
     }
 
     header, footer{
         grid-column: 1/3;
+    }
+
+    main.stories{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+
+    aside{
+        height: 100%;
+        margin-top: 0;
     }
 
     main{
@@ -438,5 +446,67 @@ div.newsletter-container{
     section.personal-info li {
         flex: 1 1 45%;
     }
+
+    main.stories{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    h1 {  
+    background-image: url("Alt\ Vision\ Logo.svg");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }  
+
+    h1 img {  
+    opacity: 0;  
+    }  
+
+    div.container, div.home-container{
+    background-color: rgb(10, 29, 38);
+}
+
+div.container p, div.home-container p{
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: rgb(0, 149, 212);
+}
+    
+section h3{
+    color: rgb(0, 149, 212);
+}
+
+aside{
+    background-color: rgb(247, 237, 216);
+}
+
+figcaption{
+    color: rgb(205, 197, 180);
+}
+
+body{
+    color: rgb(255, 255, 255);
+}
+
+.photogallery figcaption{
+    color: rgb(205, 197, 180);
+}
+
+ div.container aside p{
+        color: black;
+    }
+
+div.home-container aside p{
+     color: white;
+}
+
+main.stories h2{
+    border-top: 4px solid rgb(0, 149, 212);
+}
 
 }
