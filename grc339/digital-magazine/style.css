@@ -187,13 +187,10 @@ nav.thumbnails img:hover {
 /*Newsletter*/
 h4{
     padding: 1em;
-    text-align: center;
-    margin: auto;
     border-style: solid;
     background-color: rgb(32, 82, 112);
     color: rgb(255, 255, 255);
     border-radius: 10px;
-
     font-family: "coolvetica", sans-serif;
     font-size: 1.25em;
     font-weight: bold;
@@ -203,45 +200,35 @@ h4{
 main.newsletter {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     padding: 2em;
     gap: 2em;
     background-color: rgb(205, 197, 182);
 }
 
 main.newsletter img {
-    width: 8em;
+    width: 12em;
+    margin: auto;
 }
 
 main.newsletter form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-    width: 100%;
-    max-width: 40em;
+  max-width: 80em;
+  margin: 0 auto;
 }
 
 main.newsletter section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1em;
-    width: 100%;
 }
 
 main.newsletter ul {
     list-style: none;
     padding: 0;
-    margin: auto;
     width: fit-content;
 }
 
 main.newsletter li {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     gap: .5em;
     margin-bottom: 1em;
 }
@@ -255,8 +242,8 @@ main.newsletter input[type="email"],
 main.newsletter input[type="tel"],
 main.newsletter select {
     display: block;
-    width: 80%;
     max-width: 30em;
+    align-items: center;
     box-sizing: border-box;
     padding: .75em;
     border: 1px solid rgb(205, 197, 182);
@@ -276,12 +263,12 @@ main.newsletter button {
     font-family: "coolvetica", sans-serif;
     font-size: 1em;
     display: block;
-    margin: 0 auto;
 }
 
 main.newsletter h2{
     color:rgb(255, 255, 255);
     border-style: solid;
+    margin: auto;
 }
 
 main.newsletter h3{
@@ -292,6 +279,20 @@ main.newsletter h3{
 main.stories h2{
     border-style: solid;
     border-top: 4px solid rgb(32, 82, 112);
+}
+
+article.Jerseys{
+    border-top: 15px;
+    border-style: solid;
+    border-color: rgb(32, 82, 112);
+    padding-top: .5em;
+}
+
+article.Iconography{
+     border-top: 15px;
+    border-style: solid;
+    border-color: rgb(32, 82, 112);
+    padding-top: .5em;
 }
 
 @media screen and (min-width: 40em) {
@@ -320,7 +321,7 @@ main.stories h2{
 
 div.newsletter-container{
     margin: auto;
-    max-width: 80em;
+    width: 95%;
     background-color: rgb(247, 237, 216);
 }
 
@@ -369,10 +370,8 @@ div.stories-container {
     }
 
     main.newsletter {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: auto;
     }
 
     main.photogallery{
@@ -451,20 +450,55 @@ div.stories-container {
     }
 
       section.personal-info ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        row-gap: 3rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     section.personal-info li {
-        flex: 1 1 45%;
-    }
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.personal-info label {
+  text-align: right;
+}
+
+.personal-info input,
+.personal-info select {
+  width: 15em;
+  height: 3em;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  padding: 0 1.25rem;
+  font-size: 1.2rem;
+}
 
     main.stories{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2em;
     }
+
+     .newsletter-container {
+    width: 100%;
+  }
+
+  header {
+    padding: 1.25rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -478,7 +512,7 @@ div.stories-container {
     opacity: 0;  
     }  
 
-    div.container, div.home-container{
+    div.container, div.home-container, div.newsletter-container, main.newsletter{
     background-color: rgb(10, 29, 38);
 }
 
@@ -511,15 +545,20 @@ body{
 }
 
  div.container aside p{
-        color: black;
+        color: rgb(0, 0, 0);
     }
 
 div.home-container aside p{
-     color: white;
+     color: rgb(255, 255, 255);
 }
 
 main.stories h2{
     border-top: 4px solid rgb(0, 149, 212);
 }
+
+article.Jerseys,article.Iconography {
+    border-color: rgb(0, 149, 212);
+}
+
 
 }
